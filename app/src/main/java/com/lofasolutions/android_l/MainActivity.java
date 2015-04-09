@@ -1,6 +1,7 @@
 package com.lofasolutions.android_l;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,7 +14,11 @@ import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener{
     TextView textView;
-    Button button0,button1,button2,button3,button4,button5,button6,button7,button8,button9,buttonCos,buttonDevide;
+    Button button0,button1,button2,button3,button4,button5,button6,button7,button8,
+            button9,buttonCos,buttonDevide,buttonPlus,buttonMinus,buttonExponential,
+            buttonExp,buttonTime,buttonLn,buttonX,buttonDel,buttonSin,buttonLog,
+            buttonSigned,buttonDot,buttonLbracket,buttonRbracket,buttonTan,buttonPi,
+            buttonValue,buttonPlot;
     String calc;
 
     @Override
@@ -167,7 +172,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             addtext(")");
             break;
         case R.id.btn_tan:
-            addtext("tan");
+            addtext("tan(");
             break;
         case R.id.btn_pi:
             addtext("pi");
@@ -177,6 +182,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             break;
         case R.id.btn_plot:
             //addtext("7");
+            changePlotActivity();
             break;
         case R.id.btn_sin:
             addtext("sin(");
@@ -192,12 +198,18 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     }
 
     public void addtext(String text) {
-        int length = text.length();
+//        int length = text.length();
         calc = textView.getText().toString();
         calc += text;
         textView.setText(calc);
     }
 
+    public void changePlotActivity(){
+        Intent plotIntent = new Intent(MainActivity.this, GraphButtonActivity.class);
+        calc = textView.getText().toString();
+        plotIntent.putExtra("calc", calc); //Optional parameters
+        MainActivity.this.startActivity(plotIntent);
+    }
 
 
 
