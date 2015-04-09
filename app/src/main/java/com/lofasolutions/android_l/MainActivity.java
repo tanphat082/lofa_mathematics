@@ -42,8 +42,48 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         button8.setOnClickListener(this);
         button9 = (Button) findViewById(R.id.btn_9);
         button9.setOnClickListener(this);
+
         buttonCos = (Button) findViewById(R.id.btn_cos);
         buttonCos.setOnClickListener(this);
+        buttonPlus = (Button) findViewById(R.id.btn_plus);
+        buttonPlus.setOnClickListener(this);
+        buttonMinus = (Button) findViewById(R.id.btn_minus);
+        buttonMinus.setOnClickListener(this);
+        buttonExponential = (Button) findViewById(R.id.btn_exponential);
+        buttonExponential.setOnClickListener(this);
+        buttonExp = (Button) findViewById(R.id.btn_exp);
+        buttonExp.setOnClickListener(this);
+        buttonTime = (Button) findViewById(R.id.btn_time);
+        buttonTime.setOnClickListener(this);
+        buttonDevide = (Button) findViewById(R.id.btn_devide);
+        buttonDevide.setOnClickListener(this);
+        buttonLn = (Button) findViewById(R.id.btn_ln);
+        buttonLn.setOnClickListener(this);
+        buttonX = (Button) findViewById(R.id.btn_x);
+        buttonX.setOnClickListener(this);
+        buttonDel = (Button) findViewById(R.id.btn_del);
+        buttonDel.setOnClickListener(this);
+
+        buttonSin = (Button) findViewById(R.id.btn_sin);
+        buttonSin.setOnClickListener(this);
+        buttonLog = (Button) findViewById(R.id.btn_log);
+        buttonLog.setOnClickListener(this);
+        buttonSigned = (Button) findViewById(R.id.btn_signed);
+        buttonSigned.setOnClickListener(this);
+        buttonDot = (Button) findViewById(R.id.btn_dot);
+        buttonDot.setOnClickListener(this);
+        buttonLbracket = (Button) findViewById(R.id.btn_lbracket);
+        buttonLbracket.setOnClickListener(this);
+        buttonRbracket = (Button) findViewById(R.id.btn_rbracket);
+        buttonRbracket.setOnClickListener(this);
+        buttonTan = (Button) findViewById(R.id.btn_tan);
+        buttonTan.setOnClickListener(this);
+        buttonPi = (Button) findViewById(R.id.btn_pi);
+        buttonPi.setOnClickListener(this);
+        buttonValue = (Button) findViewById(R.id.btn_value);
+        buttonValue.setOnClickListener(this);
+        buttonPlot = (Button) findViewById(R.id.btn_plot);
+        buttonPlot.setOnClickListener(this);
     }
 
 //    public void onClickBtn0 (View v) {
@@ -82,12 +122,69 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         case R.id.btn_9:
             addtext("9");
             break;
+
         case R.id.btn_cos:
             addtext("cos(");
             break;
         case R.id.btn_devide:
             addtext("/");
             break;
+		case R.id.btn_plus:
+            addtext("+");
+            break;
+        case R.id.btn_minus:
+            addtext("-");
+            break;
+        case R.id.btn_exponential:
+            addtext("^");
+            break;
+        case R.id.btn_time:
+            addtext("*");
+            break;
+        case R.id.btn_ln:
+            addtext("ln(");
+            break;
+        case R.id.btn_x:
+            addtext("x");
+            break;
+        case R.id.btn_del:
+            //addtext("8");
+            break;
+        case R.id.btn_log:
+            addtext("log(");
+            break;
+
+		case R.id.btn_signed:
+            addtext("-");
+            break;
+        case R.id.btn_dot:
+            addtext(".");
+            break;
+        case R.id.btn_lbracket:
+            addtext("(");
+            break;
+        case R.id.btn_rbracket:
+            addtext(")");
+            break;
+        case R.id.btn_tan:
+            addtext("tan");
+            break;
+        case R.id.btn_pi:
+            addtext("pi");
+            break;
+        case R.id.btn_value:
+            //addtext("6");
+            break;
+        case R.id.btn_plot:
+            //addtext("7");
+            break;
+        case R.id.btn_sin:
+            addtext("sin(");
+            break;
+        case R.id.btn_exp:
+            addtext("exp(");
+            break;
+
         default:
 //            resId = R.raw.a;
             break;
