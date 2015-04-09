@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/phatnguyentan/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-8a6952923a5731c2b2ac26e78a20cf73db4bc6b0.jar" />
+    </item>
+    <item
+        jar="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/pre-dexed/debug/classes-246103f4bd0e0e188f1a7084884b02e735029d23.jar" />
+    </item>
+    <item
+        jar="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/pre-dexed/debug/classes-6952c78724c0f5f4618bf0b30e7fd3237a10ab9b.jar" />
+    </item>
+    <item
+        jar="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/home/phatnguyentan/AndroidStudioProjects/Android_L/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-b28065fd6373b23b87de51c4eecbbc22dc9066aa.jar" />
+    </item>
+
+</items>
