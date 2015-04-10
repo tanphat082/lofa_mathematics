@@ -153,7 +153,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             addtext("x");
             break;
         case R.id.btn_del:
-            //addtext("8");
+            delAction();
             break;
         case R.id.btn_log:
             addtext("log(");
@@ -181,7 +181,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             //addtext("6");
             break;
         case R.id.btn_plot:
-            //addtext("7");
             changePlotActivity();
             break;
         case R.id.btn_sin:
@@ -210,6 +209,16 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         plotIntent.putExtra("calc", calc); //Optional parameters
         MainActivity.this.startActivity(plotIntent);
     }
+	
+	public void delAction() {
+		if (textView.getText().length() > 0) {
+			String txt = textView.getText();
+			// Delete lastest character
+			txt = txt.substring(0, txt.length()-1);
+			// Set txt to textView
+			textView.setText(txt);
+		}
+	}
 
 
 
