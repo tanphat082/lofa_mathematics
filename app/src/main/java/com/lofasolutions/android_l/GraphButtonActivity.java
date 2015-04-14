@@ -1,14 +1,8 @@
 package com.lofasolutions.android_l;
 
-import java.io.DataInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class GraphButtonActivity extends Activity {
@@ -29,11 +23,15 @@ public class GraphButtonActivity extends Activity {
         float[] xvalues = new float[1001];
         float[] yvalues = new float[1001];
         Intent intent = getIntent();
-        String value = intent.getStringExtra("calc");
+        String calc = intent.getStringExtra("calc");
+        PlotMath plotMath = new PlotMath();
         for (int i = 0; i < 1001; i++){
         	double temp = ( -5 + i * .01);
         	xvalues[i] = (float)temp;
-        	yvalues[i] = (float)(Math.sin(temp));
+//        	yvalues[i] = (float)(Math.sin(temp));
+            String newCalc = plotMath.makeExpression(calc, xvalues[i]);
+            yvalues[i] = plotMath.getY(newCalc);
+            temp = 0;
         }
         
         plot2d graph = new plot2d(this, xvalues, yvalues, 1);

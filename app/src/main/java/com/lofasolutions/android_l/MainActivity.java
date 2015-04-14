@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -212,7 +211,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 	
 	public void delAction() {
 		if (textView.getText().length() > 0) {
-			String txt = textView.getText();
+			String txt = (String)textView.getText();
 			// Delete lastest character
 			txt = txt.substring(0, txt.length()-1);
 			// Set txt to textView
